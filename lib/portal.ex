@@ -44,6 +44,13 @@ defmodule Portal do
   end
 
   @doc """
+  Pushes data to the left in the given `portal`.
+  """
+  def push_left(portal) do
+    response_portal = push("left", portal)
+    response_portal
+  end
+
   Pushes data to the right in the given `portal`.
   """
   def push_right(portal) do
